@@ -1,0 +1,157 @@
+html, body
+{
+	margin:0px;
+	padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    }
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px; 
+}
+
+.header
+{
+	background: url(bg.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	height: 800px;
+}
+
+.header .container
+{
+	position: relative;
+	top: 300px;
+}
+
+.header h1
+{
+	color: white;
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 43px;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p 
+{
+	    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+
+.btn {
+	text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: black;
+    transition:background 0.5s;
+}
+
+.btn:hover, .nav ul li:hover
+{
+	background-color: blue;
+	transition:background 0.5s;
+	cursor:pointer;
+}
+
+.nav
+{
+	background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+.nav ul
+{
+    list-style-type: none;
+    margin-left: -40px;
+    margin: 0 auto;
+}
+
+.nav ul li 
+{
+	color: #fff;
+    display: inline-block;
+    line-height: 80px;
+    padding: 0px 10px;
+    transition: background 0.5s;
+}
+
+.main img {
+	float: left;
+	margin: 50px 80px 50px 0px;
+}
+
+.main .container
+{
+	margin: 80px auto;
+}
+
+.jumbotron{
+	background: url('https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg') no-repeat center center;
+    width: 9;
+    background-size: cover;
+    height: 600px;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 220px;
+}
+
+.jumbotron h2, .jumbotron  p
+{
+	color: white;
+    text-align: right;
+}
+
+.jumbotron .btn
+{
+	float: right;
+    margin: 10px 0px 0px;
+}
+
+.footer
+{
+	background-color: black;
+	height: 80px;
+}
+
+.footer p
+{
+	color: white;
+    margin: 0;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
